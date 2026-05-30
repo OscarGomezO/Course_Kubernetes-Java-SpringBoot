@@ -4,35 +4,41 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name="usuarios")
-public class Usuario {
+public class Usuario{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String nombre;
-
     @Column(unique = true)
     private String email;
-
     private String password;
 
-    // --- GETTERS (Están bien) ---
-    public Long getId() { return id; }
-    public String getNombre() { return nombre; }
-    public String getEmail() { return email; }
-    public String getPassword() { return password; }
+    public Long getId() {
+        return id;
+    }
 
-    // --- SETTERS CORREGIDOS ---
-    public void setId(Long id) { // Debe recibir el parámetro y ser void
+    public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public void setPassword(String password) {

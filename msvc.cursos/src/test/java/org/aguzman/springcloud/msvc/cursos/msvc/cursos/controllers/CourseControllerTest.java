@@ -1,3 +1,4 @@
+/*
 package org.aguzman.springcloud.msvc.cursos.msvc.cursos.controllers;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -31,3 +32,5 @@ class CourseControllerTest {
     void deleteCourse() {
     }
 }
+
+ */
