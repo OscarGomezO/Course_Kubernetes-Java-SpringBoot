@@ -8,13 +8,13 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>org.aguzman.springcloud.msvc</groupId>
-  <artifactId>course-kubernetes</artifactId>
+  <artifactId>curso-kubernetes</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
     <module>msvc-usuarios</module>
-    <module>msvc.cursos</module>
+    <module>msvc-cursos</module>
   </modules>
-  <name>Archetype - course-kubernetes</name>
+  <name>Archetype - curso-kubernetes</name>
   <url>http://maven.apache.org</url>
 </project>

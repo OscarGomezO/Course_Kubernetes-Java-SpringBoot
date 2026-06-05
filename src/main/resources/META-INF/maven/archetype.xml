@@ -1,5 +1,5 @@
 <archetype>
-  <id>course-kubernetes</id>
+  <id>curso-kubernetes</id>
   <sources>
     <source>src/main/java/App.java</source>
   </sources>

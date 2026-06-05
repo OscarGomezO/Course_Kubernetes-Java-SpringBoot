@@ -9,10 +9,9 @@ import java.util.Optional;
 public interface UsuarioService {
     List<Usuario> listar();
     Optional<Usuario> porId(Long id);
-
     Usuario guardar(Usuario usuario);
     void eliminar(Long id);
 
-    @Transactional
-    void elimninar(Long id);
+    Optional<Usuario> porEmail(String email);
+    boolean existePorEmail(String email);
 }
