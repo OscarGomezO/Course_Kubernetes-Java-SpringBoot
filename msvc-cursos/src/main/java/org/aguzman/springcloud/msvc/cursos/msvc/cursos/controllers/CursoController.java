@@ -1,8 +1,7 @@
 package org.aguzman.springcloud.msvc.cursos.msvc.cursos.controllers;
 
-import feign.Response;
 import jakarta.validation.Valid;
-import org.aguzman.springcloud.msvc.cursos.msvc.cursos.entity.Curso;
+import org.aguzman.springcloud.msvc.cursos.msvc.cursos.models.Curso;
 import org.aguzman.springcloud.msvc.cursos.msvc.cursos.services.CursoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

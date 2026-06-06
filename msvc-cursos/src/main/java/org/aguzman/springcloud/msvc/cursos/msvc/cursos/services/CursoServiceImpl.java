@@ -1,6 +1,6 @@
 package org.aguzman.springcloud.msvc.cursos.msvc.cursos.services;
 
-import org.aguzman.springcloud.msvc.cursos.msvc.cursos.entity.Curso;
+import org.aguzman.springcloud.msvc.cursos.msvc.cursos.models.Curso;
 import org.aguzman.springcloud.msvc.cursos.msvc.cursos.repositories.CursoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package org.aguzman.springcloud.msvc.cursos.msvc.cursos.entity;
+package org.aguzman.springcloud.msvc.cursos.msvc.cursos.models;
 
 
 import jakarta.persistence.*;

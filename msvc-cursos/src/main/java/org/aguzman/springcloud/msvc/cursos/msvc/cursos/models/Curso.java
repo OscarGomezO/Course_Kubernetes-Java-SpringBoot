@@ -1,8 +1,8 @@
-package org.aguzman.springcloud.msvc.cursos.msvc.cursos.entity;
+package org.aguzman.springcloud.msvc.cursos.msvc.cursos.models;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
+import org.aguzman.springcloud.msvc.cursos.msvc.cursos.models.entity.Usuario;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,10 +19,15 @@ public class Curso {
     private String nombre;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "curso_id")
     private List<CursoUsuario> cursoUsuarios;
+
+    @Transient
+    private List<Usuario> usuarios;
 
     public Curso() {
         cursoUsuarios = new ArrayList<>();
+        usuarios = new ArrayList<>();
     }
 
     public Long getId() {
